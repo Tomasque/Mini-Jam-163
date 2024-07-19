@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tags : MonoBehaviour
+public static class Ref
 {
-    public bool platform;
-    public bool harms;
+    public static LevelPan levelPan;
 }

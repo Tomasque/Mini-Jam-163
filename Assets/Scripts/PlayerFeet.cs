@@ -12,7 +12,7 @@ public class PlayerFeet : MonoBehaviour
     {
 
         Tags T = collision.gameObject.GetComponent<Tags>();
-        if (!T.platform)
+        if (T == null || !T.platform)
             return;
 
         if (playerMove.transform.position.y - collision.transform.position.y > 0 && playerMove.verticalVelocity < 0)
@@ -23,12 +23,18 @@ public class PlayerFeet : MonoBehaviour
         {
             playerMove.verticalVelocity = Mathf.Max(0, playerMove.verticalVelocity);
 
-            if (playerMove.verticalVelocity == 0)
-            {
-                playerMove.transform.position = new Vector3(playerMove.transform.position.x, collision.transform.position.y, 0);
-                playerMove.grounded = true;
-                playerMove.pounding = false;
-            }
+            if (playerMove.verticalVelocity > 0)
+                return;
+
+            playerMove.transform.position = new Vector3(playerMove.transform.position.x, collision.transform.position.y, 0);
+            playerMove.grounded = true;
+            playerMove.pounding = false;
+
+            PanTrigger P = collision.gameObject.GetComponent<PanTrigger>();
+            if (P == null)
+                return;
+
+            P.Activate();
         }
     }
 
