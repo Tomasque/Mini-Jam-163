@@ -5,4 +5,5 @@ using UnityEngine;
 public static class Ref
 {
     public static LevelPan levelPan;
+    public static ScoreKeeper scoreKeeper;
 }
