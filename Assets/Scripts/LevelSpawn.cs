@@ -53,6 +53,8 @@ public class LevelSpawn : MonoBehaviour
                 SingleMedley(firstEnemy);
             else if (!secondIntroDone)
                 BasicIntro(secondEnemy);
+            else if (!secondMedleyDone)
+                DoubleMedley(firstEnemy,secondEnemy);
             return;
         }
 
@@ -90,6 +92,27 @@ public class LevelSpawn : MonoBehaviour
         if (subIndex >= firstMedleyDuration) //the only single medley is the first medley
         {
             firstMedleyDone = true;
+            subIndex = 0;
+            index++;
+        }
+    }
+
+    void DoubleMedley(int ID1, int ID2)
+    {
+        List<GameObject> thisMedley = doubleMedleyList[ID1][ID2];
+
+        int i = Random.Range(0, thisMedley.Count);
+        Instantiate(thisMedley[i], currentSpawnPoint, Quaternion.identity, transform);
+        subIndex++;
+        if (subIndex >= secondMedleyDuration && !secondMedleyDone)
+        {
+            secondMedleyDone = true;
+            subIndex = 0;
+            index++;
+        }
+        else if (subIndex >= thirdMedleyDuration && secondMedleyDone)
+        {
+            thirdMedleyDone = true;
             subIndex = 0;
             index++;
         }
