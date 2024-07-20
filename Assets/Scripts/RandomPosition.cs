@@ -5,6 +5,7 @@ using UnityEngine;
 public class RandomPosition : MonoBehaviour
 {
     [SerializeField] Vector2 randomX;
+    [SerializeField] bool randomFacing;
 
     private void Awake()
     {
@@ -14,6 +15,12 @@ public class RandomPosition : MonoBehaviour
         if(randomX.x !=0 && randomX.y != 0)
         {
             x = Random.Range(randomX.x,randomX.y);
+        }
+
+        if(randomFacing)
+        {
+            int facing = Random.Range(0, 2) * 2 - 1;
+            transform.localScale = new Vector3(transform.localScale.x * facing, transform.localScale.y, 1);
         }
 
         transform.localPosition = new Vector3(x, y, 0);

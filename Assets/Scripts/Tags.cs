@@ -6,4 +6,5 @@ public class Tags : MonoBehaviour
 {
     public bool platform;
     public bool harms;
+    public bool patrolBorder;
 }

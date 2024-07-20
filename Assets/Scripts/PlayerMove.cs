@@ -114,10 +114,8 @@ public class PlayerMove : MonoBehaviour
 
     IEnumerator Delay()
     {
-        while (Time.deltaTime > .005f)
-        {
-            yield return new WaitForSeconds(0);
-        }
+        
+        yield return new WaitForSeconds(.1f);
 
         ready = true;
     }
