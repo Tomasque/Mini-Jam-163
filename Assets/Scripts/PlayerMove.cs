@@ -79,7 +79,7 @@ public class PlayerMove : MonoBehaviour
         {
             jumping = false;
         }
-
+        /*
         if((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && !grounded)
         {
             pounding = true;
@@ -89,7 +89,7 @@ public class PlayerMove : MonoBehaviour
         {
             verticalVelocity -= poundSpeed;
         }
-
+        */
         verticalVelocity -= fallAcceleration * Time.deltaTime;
         verticalVelocity = Mathf.Clamp(verticalVelocity, maxFallSpeed, maxJumpSpeed);
 

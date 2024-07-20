@@ -33,18 +33,19 @@ public class LevelPan : MonoBehaviour
     IEnumerator PanUp(Transform nextLevel)
     {
         Vector3 currentPosition = transform.position;
+        Vector3 newPosition = Vector3.up * nextLevel.position.y;
 
         for(float t = 0; t < panDuration; t += Time.deltaTime)
         {
             float x = t / panDuration;
             float y = x * x * (3f - 2f * x);
-            transform.position = Vector3.Lerp(currentPosition, nextLevel.position, y);
+            transform.position = Vector3.Lerp(currentPosition, newPosition, y);
 
             yield return new WaitForSeconds(0);
         }
 
-        transform.position = nextLevel.position;
-        Destroy(currentLevel.gameObject);
+        transform.position = newPosition;
+        Destroy(currentLevel.parent.gameObject);
         currentLevel = nextLevel;
     }
 }

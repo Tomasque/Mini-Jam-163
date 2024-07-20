@@ -12,7 +12,7 @@ public class RandomPosition : MonoBehaviour
         float x = transform.localPosition.x;
         float y = transform.localPosition.y;
 
-        if(randomX.x !=0 && randomX.y != 0)
+        if(randomX.x !=0 || randomX.y != 0)
         {
             x = Random.Range(randomX.x,randomX.y);
         }
