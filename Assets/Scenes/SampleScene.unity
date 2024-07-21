@@ -320,6 +320,17 @@ MonoBehaviour:
   - {fileID: 6580639608115462614, guid: ecde3b00bd4c04d4995cf066f3fac36d, type: 3}
   - {fileID: 8445900010394500806, guid: 3d5f0a919359eb546bac6114a2369aae, type: 3}
   - {fileID: 8445900010394500806, guid: f945aabed364988499760c00db9a4876, type: 3}
+  shooterIntro:
+  - {fileID: 5581854842803639751, guid: 5f9f4389efd040d4b9509fb5f31be4b6, type: 3}
+  - {fileID: 5581854842803639751, guid: 08467a7019a611e4798c0f518218fa64, type: 3}
+  - {fileID: 5581854842803639751, guid: 2206783acb684704d9e4727f837bf8a4, type: 3}
+  shooterMedley:
+  - {fileID: 5581854842803639751, guid: 5126fd90c73dca34d9cd7b041bf625cd, type: 3}
+  - {fileID: 5581854842803639751, guid: 01f3ecff63482094da4407a1a3f02145, type: 3}
+  - {fileID: 5581854842803639751, guid: 0831ea03c115e5043994759db12ab2a6, type: 3}
+  - {fileID: 5581854842803639751, guid: f634fff5b570938489d21e1d72ecbaef, type: 3}
+  - {fileID: 5581854842803639751, guid: 72eaca8dd5f54a548af506041b4d6f37, type: 3}
+  - {fileID: 5581854842803639751, guid: 3511d6d41d61f3c49beb1e5c85a565be, type: 3}
   POMedley:
   - {fileID: 6580639608115462614, guid: d74013772cf98ee45af1c1fd903102a9, type: 3}
   - {fileID: 6580639608115462614, guid: 36da2dd270044554dbb5a7a970a3955a, type: 3}
@@ -331,7 +342,7 @@ MonoBehaviour:
   firstMedleyDuration: 5
   secondMedleyDuration: 6
   thirdMedleyDuration: 5
-  firstEnemy: 0
+  firstEnemy: 2
   secondEnemy: 1
 --- !u!1 &475881967
 GameObject:

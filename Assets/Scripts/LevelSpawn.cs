@@ -10,6 +10,8 @@ public class LevelSpawn : MonoBehaviour
     [SerializeField] List<GameObject> patrolMedley;
     [SerializeField] List<GameObject> orbIntro;
     [SerializeField] List<GameObject> orbMedley;
+    [SerializeField] List<GameObject> shooterIntro;
+    [SerializeField] List<GameObject> shooterMedley;
     [SerializeField] List<GameObject> POMedley;
     int subIndex;
     bool firstIntroDone;
@@ -34,8 +36,8 @@ public class LevelSpawn : MonoBehaviour
 
     private void Awake()
     {
-        introList = new List<List<GameObject>>() { patrolIntro, orbIntro, null };
-        singleMedleyList = new List<List<GameObject>>() { patrolMedley, orbMedley, null };
+        introList = new List<List<GameObject>>() { patrolIntro, orbIntro, shooterIntro };
+        singleMedleyList = new List<List<GameObject>>() { patrolMedley, orbMedley, shooterMedley };
         doubleMedleyList = new List<List<List<GameObject>>>() { new List<List<GameObject>>() { null, POMedley, null },
                                                                 new List<List<GameObject>>() { POMedley, null , null },
                                                                 new List<List<GameObject>>() { null, null, null } };

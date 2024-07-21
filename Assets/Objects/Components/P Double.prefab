@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.8
+  ignoreBoundary: 0
 --- !u!114 &6415794410067407905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: 0
   harms: 1
-  patrolBorder: 0
+  patrolBorder: 1
 --- !u!70 &6415794410067407904
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

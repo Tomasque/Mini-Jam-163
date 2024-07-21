@@ -5,6 +5,7 @@ using UnityEngine;
 public class Tags : MonoBehaviour
 {
     public bool platform;
+    public bool blocksBullets;
     public bool harms;
     public bool patrolBorder;
 }

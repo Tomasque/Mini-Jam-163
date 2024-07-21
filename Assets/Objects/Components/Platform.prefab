@@ -72,6 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: 0
+  blocksBullets: 0
   harms: 0
   patrolBorder: 1
 --- !u!1 &2021097047555442611
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: 0
+  blocksBullets: 0
   harms: 0
   patrolBorder: 1
 --- !u!1 &8485210484481182862
@@ -210,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: 1
+  blocksBullets: 1
   harms: 0
   patrolBorder: 0
 --- !u!61 &8485210484481182860

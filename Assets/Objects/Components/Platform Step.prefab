@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8485210484481182835, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: blocksBullets
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8485210484481182861, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -80,3 +84,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: {x: -3, y: 3}
+  randomFacing: 0

@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  ignoreBoundary: 0
 --- !u!114 &8998120841487447626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: 0
   harms: 1
-  patrolBorder: 0
+  patrolBorder: 1
 --- !u!58 &5021826809749927448
 CircleCollider2D:
   m_ObjectHideFlags: 0
