@@ -13,6 +13,7 @@ public class LevelSpawn : MonoBehaviour
     [SerializeField] List<GameObject> shooterIntro;
     [SerializeField] List<GameObject> shooterMedley;
     [SerializeField] List<GameObject> POMedley;
+    [SerializeField] List<GameObject> PSMedley;
     int subIndex;
     bool firstIntroDone;
     [SerializeField] int firstMedleyDuration;
@@ -24,8 +25,9 @@ public class LevelSpawn : MonoBehaviour
     [SerializeField] int thirdMedleyDuration;
     bool thirdMedleyDone;
 
-    [SerializeField] int firstEnemy;
-    [SerializeField] int secondEnemy;
+    int firstEnemy = 0;
+    int secondEnemy = 1;
+    int thirdEnemy = 2;
 
 
     Vector3 currentSpawnPoint;
@@ -38,9 +40,9 @@ public class LevelSpawn : MonoBehaviour
     {
         introList = new List<List<GameObject>>() { patrolIntro, orbIntro, shooterIntro };
         singleMedleyList = new List<List<GameObject>>() { patrolMedley, orbMedley, shooterMedley };
-        doubleMedleyList = new List<List<List<GameObject>>>() { new List<List<GameObject>>() { null, POMedley, null },
+        doubleMedleyList = new List<List<List<GameObject>>>() { new List<List<GameObject>>() { null, POMedley, PSMedley },
                                                                 new List<List<GameObject>>() { POMedley, null , null },
-                                                                new List<List<GameObject>>() { null, null, null } };
+                                                                new List<List<GameObject>>() { PSMedley, null, null } };
     }
 
     public void SpawnLevel(float spawnOffset)
@@ -56,7 +58,11 @@ public class LevelSpawn : MonoBehaviour
             else if (!secondIntroDone)
                 BasicIntro(secondEnemy);
             else if (!secondMedleyDone)
-                DoubleMedley(firstEnemy,secondEnemy);
+                DoubleMedley(firstEnemy, secondEnemy);
+            else if (!thirdIntroDone)
+                BasicIntro(thirdEnemy);
+            else if (!thirdMedleyDone)
+                DoubleMedley(0, thirdEnemy);
             return;
         }
 
@@ -69,9 +75,16 @@ public class LevelSpawn : MonoBehaviour
     {
         List<GameObject> thisIntro = introList[introID];
 
-        Instantiate(thisIntro[subIndex], currentSpawnPoint, Quaternion.identity, transform);
+        if(thisIntro[subIndex] !=null)
+            Instantiate(thisIntro[subIndex], currentSpawnPoint, Quaternion.identity, transform);
+        else
+        {
+            List<GameObject> thisAdvancedIntro = singleMedleyList[introID];
+            int i = Random.Range(0, thisAdvancedIntro.Count);
+            Instantiate(thisAdvancedIntro[i], currentSpawnPoint, Quaternion.identity, transform);
+        }
         subIndex++;
-        if (subIndex >= introList[firstEnemy].Count)
+        if (subIndex >= introList[introID].Count)
         {
             if (!firstIntroDone)
                 firstIntroDone = true;

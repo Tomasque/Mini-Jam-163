@@ -375,8 +375,9 @@ MonoBehaviour:
   - {fileID: 5581854842803639751, guid: 8841fe96f127bbd4a8e32ea591d8b33f, type: 3}
   - {fileID: 5581854842803639751, guid: 8841fe96f127bbd4a8e32ea591d8b33f, type: 3}
   - {fileID: 5581854842803639751, guid: 8841fe96f127bbd4a8e32ea591d8b33f, type: 3}
-  - {fileID: 5581854842803639751, guid: 8841fe96f127bbd4a8e32ea591d8b33f, type: 3}
-  - {fileID: 5581854842803639751, guid: 8841fe96f127bbd4a8e32ea591d8b33f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 5581854842803639751, guid: 54fd96d77054884468a3d4aa0d99293f, type: 3}
   - {fileID: 0}
   patrolIntro:
   - {fileID: 6135204472571277507, guid: d3c25adee78e5df4a9a8043644b2142d, type: 3}
@@ -391,24 +392,26 @@ MonoBehaviour:
   orbIntro:
   - {fileID: 8445900010394500806, guid: 38decdcf80be529458e76f8befc71c75, type: 3}
   - {fileID: 8445900010394500806, guid: 23316e8af4040f242a61ee44d3c52e44, type: 3}
-  - {fileID: 8445900010394500806, guid: 23316e8af4040f242a61ee44d3c52e44, type: 3}
+  - {fileID: 8445900010394500806, guid: 907d859b8be74034cb7d44e96108f244, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   orbMedley:
   - {fileID: 8445900010394500806, guid: 6e96e2588ba645f469d69f1399836c02, type: 3}
   - {fileID: 5530008503885838704, guid: 777602631af99374db740321ca6d6677, type: 3}
-  - {fileID: 6580639608115462614, guid: ecde3b00bd4c04d4995cf066f3fac36d, type: 3}
   - {fileID: 8445900010394500806, guid: 3d5f0a919359eb546bac6114a2369aae, type: 3}
   - {fileID: 8445900010394500806, guid: f945aabed364988499760c00db9a4876, type: 3}
   shooterIntro:
   - {fileID: 5581854842803639751, guid: 5f9f4389efd040d4b9509fb5f31be4b6, type: 3}
   - {fileID: 5581854842803639751, guid: 08467a7019a611e4798c0f518218fa64, type: 3}
-  - {fileID: 5581854842803639751, guid: 2206783acb684704d9e4727f837bf8a4, type: 3}
+  - {fileID: 5581854842803639751, guid: 08467a7019a611e4798c0f518218fa64, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   shooterMedley:
-  - {fileID: 5581854842803639751, guid: 5126fd90c73dca34d9cd7b041bf625cd, type: 3}
-  - {fileID: 5581854842803639751, guid: 01f3ecff63482094da4407a1a3f02145, type: 3}
+  - {fileID: 5581854842803639751, guid: f163958702d27ef41b6939210b9c1d57, type: 3}
   - {fileID: 5581854842803639751, guid: 0831ea03c115e5043994759db12ab2a6, type: 3}
   - {fileID: 5581854842803639751, guid: f634fff5b570938489d21e1d72ecbaef, type: 3}
+  - {fileID: 5581854842803639751, guid: 5126fd90c73dca34d9cd7b041bf625cd, type: 3}
   - {fileID: 5581854842803639751, guid: 72eaca8dd5f54a548af506041b4d6f37, type: 3}
-  - {fileID: 5581854842803639751, guid: 3511d6d41d61f3c49beb1e5c85a565be, type: 3}
   POMedley:
   - {fileID: 6580639608115462614, guid: d74013772cf98ee45af1c1fd903102a9, type: 3}
   - {fileID: 6580639608115462614, guid: 36da2dd270044554dbb5a7a970a3955a, type: 3}
@@ -417,11 +420,17 @@ MonoBehaviour:
   - {fileID: 6580639608115462614, guid: 471d625f3f5e96a46831162bab4e7282, type: 3}
   - {fileID: 6135204472571277507, guid: 554870d978ff7ba46908e9d7618e6ca8, type: 3}
   - {fileID: 6580639608115462614, guid: 00f6f1023aeeb624283881e83fdb772b, type: 3}
+  PSMedley:
+  - {fileID: 5581854842803639751, guid: 668a758c460ce174db1af12977fcfe2b, type: 3}
+  - {fileID: 5581854842803639751, guid: f0c3e84d58826cd4386b632e38501222, type: 3}
+  - {fileID: 6135204472571277507, guid: 3cf6fbf1a16adc547a58baba024da169, type: 3}
+  - {fileID: 5581854842803639751, guid: d2e1bef314e3d0b409f4316b71ba7c40, type: 3}
+  - {fileID: 5581854842803639751, guid: c264af83ead8681419048a689062d433, type: 3}
+  - {fileID: 5581854842803639751, guid: 53079b66281c2ae468c935c65afc7bb1, type: 3}
+  - {fileID: 5581854842803639751, guid: 2454b59e0b3d6964bba9dd3bc1c24890, type: 3}
   firstMedleyDuration: 5
-  secondMedleyDuration: 6
+  secondMedleyDuration: 5
   thirdMedleyDuration: 5
-  firstEnemy: 2
-  secondEnemy: 1
 --- !u!1 &475881967
 GameObject:
   m_ObjectHideFlags: 0
