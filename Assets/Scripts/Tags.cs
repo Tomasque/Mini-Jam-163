@@ -8,4 +8,5 @@ public class Tags : MonoBehaviour
     public bool blocksBullets;
     public bool harms;
     public bool patrolBorder;
+    public bool instantDeath;
 }
