@@ -7,6 +7,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4189646667583390389, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c77fb8ab90f6f24d941975ed316af3c, type: 3}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0052359584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9999863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970477851031678574, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8485210484481182835, guid: d3c17d35e0dd06843b52d532a2799549, type: 3}
       propertyPath: blocksBullets
       value: 0
@@ -84,4 +116,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: {x: -3, y: 3}
+  randomY: {x: 0, y: 0}
   randomFacing: 0

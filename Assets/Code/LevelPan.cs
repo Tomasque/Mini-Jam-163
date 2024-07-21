@@ -8,6 +8,7 @@ public class LevelPan : MonoBehaviour
     [SerializeField] float panPow;
     [SerializeField] float spawnLevelOffset;
     [SerializeField] LevelSpawn levelSpawn;
+    public int cakeBackgroundLayer = 0;
 
     Transform currentLevel;
 

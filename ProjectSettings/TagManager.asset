@@ -41,3 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Cake BG
+    uniqueID: 1311524311
+    locked: 0
+  - name: Platform
+    uniqueID: 3725294733
+    locked: 0
+  - name: Cake Sides
+    uniqueID: 3334649787
+    locked: 0
+  - name: Grass
+    uniqueID: 2211574717
+    locked: 0
+  - name: Orb
+    uniqueID: 1226379349
+    locked: 0
+  - name: Hazard
+    uniqueID: 232091429
+    locked: 0
+  - name: Patrol
+    uniqueID: 841132875
+    locked: 0
+  - name: Bullet
+    uniqueID: 1864101773
+    locked: 0
+  - name: Player
+    uniqueID: 3739534195
+    locked: 0

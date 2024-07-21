@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: {x: 0, y: 0}
+  randomY: {x: 0, y: 0}
   randomFacing: 1
 --- !u!1 &9060488527198734417
 GameObject:
@@ -95,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: {x: 0, y: 0}
+  randomY: {x: 0, y: 0}
   randomFacing: 1
 --- !u!1001 &44282605786542123
 PrefabInstance:
@@ -255,9 +257,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1599937565489323154, guid: 54fd96d77054884468a3d4aa0d99293f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5581854842803639751, guid: 54fd96d77054884468a3d4aa0d99293f, type: 3}
       propertyPath: m_Name
-      value: '! P (PP)'
+      value: P (PP) & O H^
       objectReference: {fileID: 0}
     - target: {fileID: 5581854842803639768, guid: 54fd96d77054884468a3d4aa0d99293f, type: 3}
       propertyPath: m_RootOrder
@@ -394,6 +400,10 @@ PrefabInstance:
     - target: {fileID: 2350142913276217807, guid: a4c16005a7e9a34499c35a935efce41b, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350142913276217807, guid: a4c16005a7e9a34499c35a935efce41b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2350142913276217807, guid: a4c16005a7e9a34499c35a935efce41b, type: 3}
       propertyPath: m_LocalPosition.x
