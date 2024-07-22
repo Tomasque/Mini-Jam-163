@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PanTrigger : MonoBehaviour
 {
+    [SerializeField] bool dontScore;
+
     public void Activate()
     {
         Ref.levelPan.TriggerPanUp(transform);
-        Ref.scoreKeeper.Increment();
+        if(!dontScore)
+            Ref.scoreKeeper.Increment();
         Destroy(this);
     }
 }
